@@ -1,0 +1,30 @@
+/*Para estilisar use ponto para Divs e # para IDs*/
+
+
+
+.fightarea{
+    display: flex;   /*Deixa tudo um ao lado do outro */
+    gap: 20px; /*Distância entre os itens*/
+}
+
+#char, #monster{
+    flex: 1;/*Divide o espaço igualmente entre os itens*/
+}
+
+.lifebar{
+    height: 10px; /*Altura*/
+    border: 1px solid #333; /*Borda com cor e espeçura definidas*/
+    border-radius: 5px;
+}
+
+.lifebar .bar{ /*Classe pai e classe filha, bar entá dentro de lifeBar*/
+    height: inherit;
+    background-color: red; /*Cor de fundo*/
+    border-radius: 5pc;
+}
+
+.log{
+    border: 1px dotted #999;
+    height: 200px;
+    overflow-y: scroll; /*Barra de rolagem na vertical*/ 
+}
